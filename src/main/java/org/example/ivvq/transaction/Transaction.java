@@ -1,4 +1,4 @@
-package org.example.ivvq;
+package org.example.ivvq.transaction;
 
 public class Transaction {
     private int amount;

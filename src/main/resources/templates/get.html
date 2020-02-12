@@ -1,0 +1,23 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div th:if="${task != null}" class="container">
+
+    <div class="jumbotron">
+        <h1>Task detail</h1>
+        <hr/>
+        <label for="id">Id</label>
+        <input id="id" type="text" th:value="${task.id}" class="form-control"/>
+
+        <label for="userId">UserId</label>
+        <input id="userId" type="text" th:value="${task.userId}" class="form-control"/>
+
+        <label for="title">Title</label>
+        <input id="title" type="text" th:value="${task.title}" class="form-control"/>
+    </div>
+</div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package org.example.ivvq;
+package org.example.ivvq.transaction;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
