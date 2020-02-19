@@ -1,0 +1,21 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "Project used to test the ivvq-server",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^4.0.2"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^2.0.1"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "test-head": "node_modules/.bin/cypress run --headed"
+  },
+  "author": "",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}

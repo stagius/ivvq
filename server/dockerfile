@@ -1,0 +1,11 @@
+FROM maven AS builder
+
+WORKDIR /tmp
+COPY pom.xml .
+RUN mvn dependency:get --fail-never
+COPY . .
+RUN mvn install
+
+FROM openjdk:11.0-slim
+COPY --from=builder /tmp/target/ivvq-server-1.0-SNAPSHOT.jar app.jar
+CMD ["java", "-jar", "app.jar"]

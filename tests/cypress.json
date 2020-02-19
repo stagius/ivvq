@@ -1,0 +1,8 @@
+{
+  "ignoreTestFiles": "*.js",
+  "integrationFolder": "cypress/step_definitions",
+  "baseUrl": "http://localhost:8080",
+  "testFiles": "**/*.feature",
+  "video": false,
+  "defaultCommandTimeout": 15000
+}

@@ -1,0 +1,7 @@
+FROM cypress/browsers:node10.11.0-chrome75
+
+RUN npm i cypress
+COPY . .
+RUN npm i
+
+CMD ["node_modules/.bin/cypress", "run"]
